@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+</head>
+<body>
+    <header>
+        <div id="logo">
+        </div>
+        <div id="barra">
+        </div>
+        <div id="icono-carrito" onclick="alternarCarrito()">
+            <span id="contador-carrito">0</span> 🛒
+        </div>
+    </header>
+    <main>
+        <section>
+            <h1 id="titulo"></h1>
+        </section>
+    <section id="contenedor-cards">
+        
+    </section>
+    <h2>Productos</h2>
+    
+    
+        <div>
+            <button id="todos">todos</button>
+            <button id="tv">TV</button>
+            <button id="celular">Celular</button>
+        </div>
+        <section id="productos" class="productos"> </section>
+        <section id="carrito" class="carrito">
+            <h2>Carrito de compras</h2>
+            <ul id="cartItems"></ul>
+            <p>Total: $<span id="precio-total">0</span></p>
+            <button id="finalizar-compra" onclick="finalizarCompra()">Finalizar Compra</button>
+        </section>
+        
+<!-- 
+    <h2>Carrito de Compras</h2>
+    <ul id="cartItems"></ul> -->
+
+    </main>
+    <footer>
+
+    </footer>
+
+    <script src="./js/index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+</html>
